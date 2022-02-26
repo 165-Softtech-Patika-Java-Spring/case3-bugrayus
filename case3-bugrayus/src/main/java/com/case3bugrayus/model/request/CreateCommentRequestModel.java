@@ -1,10 +1,10 @@
-package com.case3bugrayus.model.request.comment;
+package com.case3bugrayus.model.request;
 
 import lombok.Data;
 
 @Data
 public class CreateCommentRequestModel {
     int userId;
-    int commentId;
+    String comment;
     int productId;
 }

@@ -7,6 +7,7 @@ import lombok.ToString;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.Objects;
 
 @Entity
@@ -20,6 +21,7 @@ public class Comment {
     Long id;
     @OneToOne
     User user;
+    @NotBlank
     String comment;
     @ManyToOne
     Product product;
